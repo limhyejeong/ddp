@@ -1,0 +1,199 @@
+.fac-information {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 90%;
+   text-align: center;
+}
+
+.fac-map {
+   max-width: 1500px;
+   position: relative;
+   width: 100%;
+}
+
+figure.fac-img img {
+   object-fit: cover;
+   width: 100%;
+}
+
+.fac-zones a {
+   position: absolute;
+   border-radius: calc(1rem + 15px);
+   padding: 5px 1rem;
+   cursor: pointer;
+   color: #000;
+   font-size: 0.9rem;
+   background-color: rgb(255, 255, 255);
+   /* border: 1px dashed #000; */
+   /* border: 1px solid #555; */
+   font-weight: 500;
+   z-index: 100;
+}
+
+.fac-zones a:hover {
+   background-color: #000;
+   color: #fff;
+}
+
+.fac-zones h1 {
+   position: absolute;
+   font-size: 2.5rem;
+   font-weight: 800;
+   -webkit-text-fill-color: rgba(255,255,255,0.5);
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #000;
+}
+
+.fac-zones h1.fac-spa1 {
+   left: 25%;
+   top: 50%;
+}
+
+.fac-zones h1.fac-spa2 {
+   left: 54%;
+   top: 50%;
+}
+
+.fac-zones h1.fac-spa3 {
+   left: 77%;
+   top: 50%;
+}
+
+.fac-zones a .fac-zone-flo {
+   color: #888;
+   font-weight: 300;
+}
+
+.fac-zones .fac-zone1 {
+   left: 32%;
+   top: 42%;
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
+}
+
+.fac-zones .fac-zone2 {
+   left: 10%;
+   top: 55%;
+   transform: translate(calc(var(--x) / 30), calc(var(--y) / 20));
+}
+
+.fac-zones .fac-zone3 {
+   left: -2%;
+   top: 30%;
+   transform: translate(calc(var(--x) / 8), calc(var(--y) / 8));
+}
+
+.fac-zones .fac-zone4 {
+   left: 15%;
+   top: 20%;
+   transform: translate(calc(var(--x) / 30), calc(var(--y) / 30));
+}
+
+.fac-zones .fac-zone5 {
+   left: 30%;
+   top: 7%;
+   transform: translate(calc(var(--x) / 30), calc(var(--y) / 30));
+}
+
+.fac-zones .fac-zone6 {
+   left: 40%;
+   top: -5%;
+   transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
+}
+
+.fac-zones .fac-zone7 {
+   left: 65%;
+   top: 25%;
+   transform: translate(calc(var(--x) / 20), calc(var(--y) / 20));
+}
+
+.fac-zones .fac-zone8 {
+   left: 80%;
+   top: 40%;
+   transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
+}
+
+.fac-zones .fac-zone9 {
+   left: 78%;
+   top: 58%;
+   transform: translate(calc(var(--x) / 15), calc(var(--y) / 15));
+}
+
+.fac-zones .fac-zone10 {
+   left: 75%;
+   top: 75%;
+   transform: translate(calc(var(--x) / 8), calc(var(--y) / 8));
+}
+
+.fac-zones .fac-zone11 {
+   left: 55%;
+   top: 70%;
+   transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
+}
+
+.fac-zones .fac-zone12 {
+   left: 50%;
+   top: 60%;
+   transform: translate(calc(var(--x) / 30), calc(var(--y) / 30));
+}
+
+.fac-zones .fac-zone13 {
+   left: 60%;
+   top: 45%;
+   transform: translate(calc(var(--x) / 50), calc(var(--y) / 50));
+}
+
+.fac-zones .fac-zone14 {
+   left: 50%;
+   top: 38%;
+   transform: translate(calc(var(--x) / 50), calc(var(--y) / 50));
+}
+
+.fac-zones .fac-bus {
+   left: 50%;
+   top: 85%;
+}
+
+.fac-zones .fac-subway {
+   left: 90%;
+   top: 20%;
+   position: absolute;
+}
+
+.fac-zones .fac-parking {
+   left: 65%;
+   top: 3%;
+}
+
+.fac-zones div {
+   position: absolute;
+   font-size: 0.75rem;
+   font-weight: 500;
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   /* background: #fff; */
+   border: 1px dashed #aaa;
+   cursor: default;
+   /* text-transform: uppercase; */
+   /* transform: translate(calc(var(--x) / 300), calc(var(--y) / 300)); */
+}
+
+.fac-zones div:hover {
+   animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}

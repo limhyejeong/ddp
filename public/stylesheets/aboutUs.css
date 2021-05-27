@@ -1,0 +1,129 @@
+.abo-descript {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   font-size: 1.5rem;
+   font-weight: 500;
+   line-height: 3.5rem;
+}
+
+.abo-all {
+   position: absolute;
+   right: 10%;
+   top: 47%;
+   width: 30px;
+   height: 30px;
+   background: #fff;
+   color: #000;
+   border: 2px solid #000;
+   text-align: center;
+   font-weight: 400;
+   font-size: 20px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.abo-all:hover {
+   background: #000;
+   color: #fff;
+}
+
+.abo-descript p span { 
+   cursor: pointer;
+   border: 2px solid #fff;
+   border-radius: 2rem;
+   padding: 0 10px;
+   /* text-transform: uppercase; */
+}
+
+.abo-descript p span:hover { 
+   border: none;  
+}
+
+.abo-descript .DDP::after {
+   content: '동대문 디자인 플라자';
+}
+
+.abo-descript .DDP:hover::after {
+   content: 'Dongdaemun Design Plaza'
+}
+
+.abo-descript .D1::after {
+   content: '꿈꾸고';
+}
+
+.abo-descript .D1:hover::after {
+   content: 'Dream';
+}
+
+.abo-descript .D2::after {
+   content: '만들고';
+}
+
+.abo-descript .D2:hover::after {
+   content: 'Design';
+}
+
+.abo-descript .P3::after {
+   content: '누리자';
+}
+
+.abo-descript .P3:hover::after {
+   content: 'Play';
+}
+
+.abo-descript .trends::after {
+   content: '트렌드';
+}
+
+.abo-descript .trends:hover::after {
+   content: 'trends';
+}
+
+.abo-descript .cultures::after {
+   content: '문화';
+}
+
+.abo-descript .cultures:hover::after {
+   content: 'cultures';
+}
+
+.abo-descript .new::after {
+   content: '신제품';
+}
+
+.abo-descript .new:hover::after {
+   content: 'new products';
+}
+
+.abo-descript .fashion::after {
+   content: '패션';
+}
+
+.abo-descript .fashion:hover::after {
+   content: 'fashion';
+}
+
+.abo-descript .exhibitions::after {
+   content: '전시';
+}
+
+.abo-descript .exhibitions:hover::after {
+   content: 'exhibitions';
+}
+
+.abo-descript .hub::after {
+   content: '디자인 산업의 발신지';
+}
+
+.abo-descript .hub:hover::after {
+   content: 'the hub of the design industry';
+}
+
+.abo-descript .world::after {
+   content: '아시아를 넘어 세계로';
+}
+
+.abo-descript .world:hover::after {
+   content: 'Asia and the world.';
+}

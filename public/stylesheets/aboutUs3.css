@@ -1,0 +1,52 @@
+.slogan {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.slogan div {
+   font-size: 10rem;
+   font-weight: 100;
+   border-radius: 50%;
+   border: 2px solid #000;
+   text-align: center;
+   background: #fff;
+}
+
+.slogan .D1::before{
+   content: 'D';
+}
+
+.slogan .D1:hover {
+   background: #000;
+   color: #fff;
+}
+
+.slogan .D1:hover::before{
+   content: 'Dream';
+}
+
+.slogan .D2::before{
+   content: 'D';
+}
+
+.slogan .D2:hover {
+   background: #000;
+   color: #fff;
+}
+
+.slogan .D2:hover::before{
+   content: 'Design';
+}
+
+.slogan .P3::before{
+   content: 'P';
+}
+
+.slogan .P3:hover {
+   background: #000;
+   color: #fff;
+}
+
+.slogan .P3:hover::before{
+   content: 'Play';
+}

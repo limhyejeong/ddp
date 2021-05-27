@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href=`/stylesheets/${name}.css`)
+
+  body
+    header 
+      a.logo(href='/')
+        img(src='../images/clogo.png' alt='DDP')
+        div
+      ul.nav
+        li
+          a(href='/aboutus') About Us 
+        li 
+          a(href='/program') Program 
+        li 
+          a(href='/facilities') Facilities
+    .container
+      block content
+    script(src=`/javascripts/${name}.js`)

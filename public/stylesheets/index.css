@@ -14,9 +14,10 @@
    position: absolute;
    font-size: 15rem;
    z-index: 7;
-   margin-top: -400px;
-   color: #fff;
-   transform: translate(calc(var(--x) / 30), calc(var(--y) / 30));
+   top: 20%;
+   /* margin-top: -400px; */
+   color: #000;
+   /* transform: translate(calc(var(--x) / 30), calc(var(--y) / 30)); */
    /* animation: identifier 3s linear infinite; */
 }
 
@@ -78,7 +79,7 @@
    bottom: 0;
    width: 100%;
    height: 200px;
-   background: linear-gradient(to top, #000, transparent);
+   background: linear-gradient(to top, #fff, transparent);
    z-index: 11;
 }
 
@@ -119,7 +120,7 @@ ul.social li img.yt {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-gap: 30px;
-   background: #000;
+   background: #fff;
    color: #fff;
    padding: 50px 100px 200px;
 }

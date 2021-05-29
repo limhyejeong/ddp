@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: #fff;
+  /* color: #fff; */
   cursor: pointer;
   text-decoration: none;
 }
@@ -53,7 +53,7 @@ header ul.nav {
 }
 
 header ul.nav li a{
-  color: #fff;
+  color: #000;
 }
 
 header ul.nav li:hover a {
@@ -71,6 +71,6 @@ header ul.nav li:not(:last-child) {
 .container {
   height: 100%;
   width: 100%;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  /* color: #fff; */
 }

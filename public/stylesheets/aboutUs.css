@@ -1,3 +1,4 @@
+
 .abo-descript {
    height: 100%;
    display: flex;
@@ -5,6 +6,8 @@
    font-size: 1.5rem;
    font-weight: 500;
    line-height: 3.5rem;
+   top: 0;
+    position: fixed;
 }
 
 .abo-all {
@@ -28,7 +31,22 @@
    color: #fff;
 }
 
-.abo-descript p span { 
+.abo-img {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.abo-img img {
+   width: 100%;
+   object-fit: cover;
+   border-top-left-radius: 50%;
+   border-top-right-radius: 50%;
+}
+
+.abo-descript p span {
    cursor: pointer;
    border: 2px solid #fff;
    border-radius: 2rem;
@@ -36,8 +54,8 @@
    /* text-transform: uppercase; */
 }
 
-.abo-descript p span:hover { 
-   border: none;  
+.abo-descript p span:hover {
+   border: none;
 }
 
 .abo-descript .DDP::after {

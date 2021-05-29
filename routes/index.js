@@ -52,6 +52,13 @@ router.get('/facility', function(req, res, next) {
  });
 });
 
+router.get('/prac', function(req, res, next) {
+  res.render('prac', { 
+    title: 'prac',
+    name: 'prac'
+ });
+});
+
 
 
 module.exports = router;

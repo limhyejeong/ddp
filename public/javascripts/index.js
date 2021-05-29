@@ -29,19 +29,19 @@ window.addEventListener('scroll', function() {
    console.log(value);
 });
 
-pos.addEventListener("mousemove", e => {
-   pos.style.setProperty('--x', e.clientX + "px");
-   pos.style.setProperty('--y', e.clientY + "px");
+// pos.addEventListener("mousemove", e => {
+//    pos.style.setProperty('--x', e.clientX + "px");
+//    pos.style.setProperty('--y', e.clientY + "px");
 
-   let xRat = e.clientX / innerWidth;
-   if (xRat < 0.3) {
-      main.style.background = 'var(--dream-color)';
-   }
-   else if (xRat < 0.6) {
-      main.style.background = 'var(--design-color)';
-   }
-   else {
-      main.style.background = 'var(--play-color)';
-   }
-})
+//    let xRat = e.clientX / innerWidth;
+//    if (xRat < 0.3) {
+//       main.style.background = 'var(--dream-color)';
+//    }
+//    else if (xRat < 0.6) {
+//       main.style.background = 'var(--design-color)';
+//    }
+//    else {
+//       main.style.background = 'var(--play-color)';
+//    }
+// })
 

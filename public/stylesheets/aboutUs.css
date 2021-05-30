@@ -1,34 +1,91 @@
+.about {
+   /* height: 100%; */
+   /* width: 100%; */
+   padding: 100px 200px 0px;
+   overflow: hidden;
+}
 
-.abo-descript {
-   height: 100%;
+.about>h1 {
+   font-size: 4rem;
+}
+
+.abo-slogan {
+   width: 100%;
    display: flex;
    align-items: center;
-   font-size: 1.5rem;
+   justify-content: space-around;
+}
+
+.abo-slo {
+   width: 100%;
+   cursor: wait;
+}
+
+.abo-slo:not(:last-child) {
+   padding-right: 30px;
+}
+
+.abo-slo:hover div {
+   animation-play-state: paused;
+}
+
+.abo-slo .abo-motion {
+   width: 100%;
+   height: 275px;
+   /* border: 1px solid #eee; */
+}
+
+.abo-slo h2 {
+   text-align: center;
+   font-weight: 700;
+}
+
+/* .abo-dream h2 span {
+   font-weight: 400;
+   color: var(--dream-color)
+}
+
+.abo-design h2 span {
    font-weight: 500;
-   line-height: 3.5rem;
+   color: var(--design-color)
+}
+
+.abo-play h2 span {
+   font-weight: 500;
+   color: var(--play-color)
+} */
+
+
+.abo-descript {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   font-size: 1rem;
+   font-weight: 300;
+   line-height: 2rem;
    top: 0;
-    position: fixed;
+   margin-top: 70px;
 }
 
 .abo-all {
    position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    right: 10%;
-   top: 47%;
+   top: 72%;
    width: 30px;
    height: 30px;
    background: #fff;
    color: #000;
-   border: 2px solid #000;
    text-align: center;
    font-weight: 400;
-   font-size: 20px;
    border-radius: 50%;
    cursor: pointer;
 }
 
 .abo-all:hover {
-   background: #000;
-   color: #fff;
+   filter: invert(1);
 }
 
 .abo-img {
@@ -48,9 +105,10 @@
 
 .abo-descript p span {
    cursor: pointer;
-   border: 2px solid #fff;
+   border: 1px solid #000;
    border-radius: 2rem;
    padding: 0 10px;
+   font-weight: 400;
    /* text-transform: uppercase; */
 }
 
@@ -144,4 +202,176 @@
 
 .abo-descript .world:hover::after {
    content: 'Asia and the world.';
+}
+
+
+
+.c {
+   border-radius: 50%;
+   border: 1px solid #000;
+   height: 100px;
+   width: 100px;
+   position: absolute;
+}
+
+
+.abo-motion {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.abo-dream .c1 {
+   animation: dream1 2s infinite;
+}
+
+.abo-dream .c3 {
+   animation: dream3 2s infinite;
+}
+
+@keyframes dream1 {
+   30% {
+      transform: translateX(-50px);
+   }
+
+   70% {
+      transform: translateX(-50px);
+   }
+
+   100% {
+      transform: translateX(0px);
+   }
+}
+
+@keyframes dream3 {
+   30% {
+      transform: translateX(50px);
+   }
+
+   70% {
+      transform: translateX(50px);
+   }
+
+   100% {
+      transform: translateX(0px);
+   }
+}
+
+
+.abo-design .abo-motion {
+   animation: design 3s infinite;
+}
+
+.abo-design .c1 {
+   animation: design1 3s infinite;
+}
+
+.abo-design .c2 {
+   animation: design2 3s infinite;
+}
+
+.abo-design .c3 {
+   animation: design3 3s infinite;
+}
+
+
+@keyframes design1 {
+   0% {
+      transform: translateY(0px);
+   }
+
+   33% {
+      transform: translateY(-35px);
+   }
+
+   66% {
+      transform: translateY(-35px);
+   }
+
+   100% {
+      transform: translateY(0px);
+   }
+}
+
+@keyframes design2 {
+   33% {
+      transform: translate(-35px, 35px);
+   }
+
+   66% {
+      transform: translate(-35px, 35px);
+   }
+
+   100% {
+      transform: translate(0px, 0px);
+   }
+}
+
+@keyframes design3 {
+   33% {
+      transform: translate(35px, 35px);
+   }
+
+   66% {
+      transform: translate(35px, 35px);
+   }
+
+   100% {
+      transform: translate(0px, 0px);
+   }
+}
+
+@keyframes design {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   50% {
+      transform: rotate(360deg);
+   }
+
+   100% {
+      transform: rotate(720deg);
+   }
+}
+
+
+
+
+.abo-play .c1 {
+   /* border: 3px solid var(--dream-color); */
+   animation: play 2s ease-in-out infinite;
+}
+
+.abo-play .c2 {
+   /* border: 3px solid var(--design-color); */
+   animation: play 2s 0.2s ease-in-out infinite;
+}
+
+.abo-play .c3 {
+   /* border: 3px solid var(--play-color); */
+   animation: play 2s 0.4s ease-in-out infinite;
+}
+
+@keyframes play {
+   0% {
+      transform: translateY(0px);
+   }
+
+   20% {
+      transform: translateY(70px);
+   }
+
+   45% {
+      transform: translateY(-70px);
+   }
+
+   70% {
+      transform: translateY(0px);
+   }
+
+   100% {
+      transform: translateY(0px);
+   }
 }

@@ -1,15 +1,21 @@
 .pro-content {
-   display: grid;
-   grid-template-columns: 3fr 7fr;
-   height: 90%;
-}
-
-.pro-category {
+   /* display: grid; */
+   /* grid-template-columns: 3fr 7fr; */
+   /* height: 90%; */
    
 }
 
+.pro-category {
+   width: 100%;
+}
+
+.pro-category ul {
+   display: flex;
+   justify-content: space-evenly;
+}
+
 .pro-category ul li {
-   font-size: 4rem;
+   font-size: 2rem;
    font-weight: 800;
    cursor: pointer;
    -webkit-text-fill-color: #fff;

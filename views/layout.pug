@@ -6,7 +6,9 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href=`/stylesheets/${name}.css`)
 
+
   body
+  
     header 
       a.logo(href='/')
         img(src='../images/clogo.png' alt='DDP')
@@ -20,4 +22,6 @@ html
           a(href='/facilities') Facilities
     .container
       block content
+
+    script(src=`/javascripts/script.js`)
     script(src=`/javascripts/${name}.js`)

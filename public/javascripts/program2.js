@@ -28,18 +28,17 @@ function programListAll() {
    // 2-2. 프로그램 수 만큼 리스트 표시 함수 실행
    for (let i = 0; i < programs.length; i++) {
       const pro = programs[i];
-      programList(pro.num, pro.title, pro.startDate, pro.endDate, pro.location, pro.category);
+      programList(pro.num, pro.title, pro.startDate, pro.endDate, pro.location);
    }
    // 2-3. 모든 프로그램이 담긴 리스트ul을 프로그램list 안에 삽입
    proList.appendChild(listUl);
 }
 // 2-4. 프로그램 리스트를 표시하는 함수(프로그램 기본정보 값 필요)
-function programList(num, title, startDate, endDate, location, category) {
+function programList(num, title, startDate, endDate, location) {
    let li = document.createElement('li');
    let a = document.createElement('a');
    a.setAttribute('href', '/programdetails');
    a.innerHTML += `<div class="pro-img"><img src="../images/program/program${num}.jpg"></div>`;
-   a.innerHTML += `<div class="pro-cate">${category}</div>`;
    a.innerHTML += `<h5 class="pro-tit">${title}</h5>`;
    a.innerHTML += `<div class="pro-sch">${startDate} ~ ${endDate}</div>`;
    a.innerHTML += `<div class="pro-loc">${location}</div>`;
@@ -73,7 +72,7 @@ function programCategory(category) {
       for (let i = 0; i < programs.length; i++) {
          const pro = programs[i];
          if (pro.category == category) {
-            programList(pro.num, pro.title, pro.startDate, pro.endDate, pro.location, pro.category);
+            programList(pro.num, pro.title, pro.startDate, pro.endDate, pro.location);
          }
       }
    }

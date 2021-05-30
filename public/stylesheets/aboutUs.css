@@ -1,12 +1,6 @@
 .about {
-   /* height: 100%; */
-   /* width: 100%; */
-   padding: 100px 200px 0px;
+   padding: 100px 200px 0;
    overflow: hidden;
-}
-
-.about>h1 {
-   font-size: 4rem;
 }
 
 .abo-slogan {
@@ -18,15 +12,33 @@
 
 .abo-slo {
    width: 100%;
-   cursor: wait;
+   z-index: 10;
+}
+
+.abo-slo:hover #cursor {
+   background: red;
+   border: 1px solid #000;
 }
 
 .abo-slo:not(:last-child) {
    padding-right: 30px;
 }
 
-.abo-slo:hover div {
-   animation-play-state: paused;
+
+.abo-slo:hover .c1 {
+   /* border: 2px solid var(--dream-color); */
+   background: var(--dream-color);
+   border: none;
+}
+.abo-slo:hover .c2 {
+   /* border: 2px solid var(--design-color); */
+   background: var(--design-color);
+   border: none;
+}
+.abo-slo:hover .c3 {
+   /* border: 2px solid var(--play-color); */
+   background: var(--play-color);
+   border: none;
 }
 
 .abo-slo .abo-motion {
@@ -37,7 +49,19 @@
 
 .abo-slo h2 {
    text-align: center;
-   font-weight: 700;
+   font-weight: 300;
+}
+
+.abo-slo.abo-dream:hover h2 {
+   color: var(--dream-color);
+}
+
+.abo-slo.abo-design:hover h2 {
+   color: var(--design-color);
+}
+
+.abo-slo.abo-play:hover h2 {
+   color: var(--play-color);
 }
 
 /* .abo-dream h2 span {
@@ -212,6 +236,7 @@
    height: 100px;
    width: 100px;
    position: absolute;
+   transition: .3s;
 }
 
 
@@ -223,20 +248,32 @@
 
 
 .abo-dream .c1 {
-   animation: dream1 2s infinite;
+   animation: dream1 3s ease infinite;
 }
 
 .abo-dream .c3 {
-   animation: dream3 2s infinite;
+   animation: dream3 3s ease infinite;
 }
 
 @keyframes dream1 {
-   30% {
+   17% {
       transform: translateX(-50px);
    }
 
-   70% {
+   34% {
       transform: translateX(-50px);
+   }
+
+   50% {
+      transform: translateX(0px);
+   }
+
+   67% {
+      transform: translateX(50px);
+   }
+
+   84% {
+      transform: translateX(50px);
    }
 
    100% {
@@ -245,12 +282,24 @@
 }
 
 @keyframes dream3 {
-   30% {
+   17% {
       transform: translateX(50px);
    }
 
-   70% {
+   34% {
       transform: translateX(50px);
+   }
+
+   50% {
+      transform: translateX(0px);
+   }
+
+   67% {
+      transform: translateX(-50px);
+   }
+
+   84% {
+      transform: translateX(-50px);
    }
 
    100% {
@@ -268,6 +317,7 @@
 }
 
 .abo-design .c2 {
+   z-index: 2;
    animation: design2 3s infinite;
 }
 

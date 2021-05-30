@@ -1,38 +1,117 @@
 .facility {
-   width: 100%;
-   height: 90%;
+   padding: 100px 200px 0;
+}
+.fac-content {
    display: flex;
+   justify-content: space-between;
+   margin-top: 50px;
 }
 
 .facility .fac-acc {
-
+   width: 70%;
 }
 
-.fac-description {
+.fac-description h2 {
+   font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.fac-description p {
+   margin-top: 30px;
 }
 
 .fac-list {
-   overflow: scroll;
-   width: 100%;
+   padding-top: 20px;
+   width: 20%;
+   border-top: 2px solid;
 }
 
-
-.fac-list .fac-list-tit {
-   font-size: 1rem;
-   font-weight: 600;
+.fac-list ul li {
+   padding: 10px 0;
 }
 
 .fac-list ul li a {
    font-size: 0.85rem;
 }
 
-.fac-img {
 
+.fac-slide input[id*= "slide"] {
+   display : none;
 }
 
-.fac-img img {
+.fac-slide input[id= "slide01"]:checked ~ .slidewrap .slidelist > li {
+   transform: translateX(0%);
+}
+
+.fac-slide input[id= "slide02"]:checked ~ .slidewrap .slidelist > li {
+   transform: translateX(-100%);
+}
+
+.fac-slide input[id= "slide03"]:checked ~ .slidewrap .slidelist > li {
+   transform: translateX(-200%);
+}
+
+.fac-slide {
    width: 100%;
-   height: 100%;
+}
+
+.fac-slide .slidewrap {
+   /* max-width: 1000px; */
+   margin: 0 auto;
+   width: 100%;
+   overflow: hidden;
+}
+
+.fac-slide .slidelist {
+   white-space: nowrap;
+   font-size: 0;
+}
+
+.fac-slide .slidelist > li {
+   display: inline-block;
+   vertical-align: middle;
+   width: 100%;
+   transition: all .5s;
+}
+
+.fac-slide .slidelist > li > a {
+   display: block;
+   position: relative;
+   cursor: default;
+   width: 100%;
+}
+
+.fac-slide .slidelist img {
+   width: 100%;
    object-fit: cover;
    border-radius: 50% 50% 0 0;
+   transition: .3s;
+   margin-top: 30px;
+}
+
+.fac-slide .slidelist:hover img {
+   border-radius: 0;
+}
+
+.fac-slide .slidelist label {
+   position: absolute;
+   z-index: 10;
+   top: 60%;
+   transform: translateY(-50%);
+   padding: 12px;
+   cursor: pointer;
+}
+
+.fac-slide .slidelist label:hover { 
+   filter: invert(1);
+}
+
+.fac-slide .slidelist .left {
+   left: 20px;
+   background: url('./../images/facility/left.svg') center center / 100% no-repeat;
+}
+
+.fac-slide .slidelist .right {
+   right: 20px;
+   background: url('./../images/facility/right.svg') center center / 100% no-repeat;
 }

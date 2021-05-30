@@ -1,16 +1,19 @@
-.fac-information {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   height: 90%;
-   text-align: center;
+.facilities {
+   padding: 100px 200px 0;
 }
 
 .fac-map {
-   max-width: 1500px;
    position: relative;
    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+
+figure.fac-img {
+   width: 100%;
+   max-width: 1200px;
 }
 
 figure.fac-img img {
@@ -28,35 +31,37 @@ figure.fac-img img {
    background-color: rgb(255, 255, 255);
    /* border: 1px dashed #000; */
    /* border: 1px solid #555; */
-   font-weight: 500;
+   font-weight: 300;
    z-index: 100;
 }
 
 .fac-zones a:hover {
    background-color: #000;
    color: #fff;
+   border-radius: 0;
+   transition: .3s;
 }
 
-.fac-zones h1 {
+.fac-zones h2 {
    position: absolute;
    font-size: 2.5rem;
-   font-weight: 800;
+   font-weight: 700;
    -webkit-text-fill-color: rgba(255,255,255,0.5);
    -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #000;
+   -webkit-text-stroke-color: #aaa;
 }
 
-.fac-zones h1.fac-spa1 {
+.fac-zones h2.fac-spa1 {
    left: 25%;
    top: 50%;
 }
 
-.fac-zones h1.fac-spa2 {
+.fac-zones h2.fac-spa2 {
    left: 54%;
    top: 50%;
 }
 
-.fac-zones h1.fac-spa3 {
+.fac-zones h2.fac-spa3 {
    left: 77%;
    top: 50%;
 }
@@ -67,84 +72,60 @@ figure.fac-img img {
 }
 
 .fac-zones .fac-zone1 {
-   left: 32%;
+   left: 35%;
    top: 42%;
    transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-zone2 {
-   left: 10%;
+   left: 17%;
    top: 55%;
    transform: translate(calc(var(--x) / 30), calc(var(--y) / 20));
 }
 
 .fac-zones .fac-zone3 {
-   left: -2%;
-   top: 30%;
+   left: 0%;
+   top: 22%;
    transform: translate(calc(var(--x) / 8), calc(var(--y) / 8));
 }
 
 .fac-zones .fac-zone4 {
-   left: 15%;
-   top: 20%;
+   left: 17%;
+   top: 10%;
    transform: translate(calc(var(--x) / 30), calc(var(--y) / 30));
 }
 
 .fac-zones .fac-zone5 {
-   left: 30%;
-   top: 7%;
-   transform: translate(calc(var(--x) / 30), calc(var(--y) / 30));
-}
-
-.fac-zones .fac-zone6 {
    left: 40%;
    top: -5%;
    transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
 }
 
-.fac-zones .fac-zone7 {
+.fac-zones .fac-zone6 {
    left: 65%;
    top: 25%;
    transform: translate(calc(var(--x) / 20), calc(var(--y) / 20));
 }
 
+.fac-zones .fac-zone7 {
+   left: 72%;
+   top: 58%;
+   transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
+}
+
 .fac-zones .fac-zone8 {
-   left: 80%;
-   top: 40%;
+   left: 57%;
+   top: 65%;
    transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
 }
 
 .fac-zones .fac-zone9 {
-   left: 78%;
-   top: 58%;
-   transform: translate(calc(var(--x) / 15), calc(var(--y) / 15));
-}
-
-.fac-zones .fac-zone10 {
-   left: 75%;
-   top: 75%;
-   transform: translate(calc(var(--x) / 8), calc(var(--y) / 8));
-}
-
-.fac-zones .fac-zone11 {
-   left: 55%;
-   top: 70%;
-   transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
-}
-
-.fac-zones .fac-zone12 {
-   left: 50%;
+   left: 53%;
    top: 60%;
    transform: translate(calc(var(--x) / 30), calc(var(--y) / 30));
 }
 
-.fac-zones .fac-zone13 {
-   left: 60%;
-   top: 45%;
-   transform: translate(calc(var(--x) / 50), calc(var(--y) / 50));
-}
-
-.fac-zones .fac-zone14 {
+.fac-zones .fac-zone10 {
    left: 50%;
    top: 38%;
    transform: translate(calc(var(--x) / 50), calc(var(--y) / 50));

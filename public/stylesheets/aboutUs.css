@@ -1,5 +1,5 @@
 .about {
-   padding: 100px 200px 0;
+   padding: 130px 15vw 0;
    overflow: hidden;
 }
 
@@ -26,31 +26,30 @@
 
 
 .abo-slo:hover .c1 {
-   /* border: 2px solid var(--dream-color); */
    background: var(--dream-color);
    border: none;
 }
 .abo-slo:hover .c2 {
-   /* border: 2px solid var(--design-color); */
    background: var(--design-color);
    border: none;
 }
 .abo-slo:hover .c3 {
-   /* border: 2px solid var(--play-color); */
    background: var(--play-color);
    border: none;
 }
 
+
 .abo-slo .abo-motion {
    width: 100%;
    height: 275px;
-   /* border: 1px solid #eee; */
 }
+
 
 .abo-slo h2 {
    text-align: center;
    font-weight: 300;
 }
+
 
 .abo-slo.abo-dream:hover h2 {
    color: var(--dream-color);
@@ -64,21 +63,6 @@
    color: var(--play-color);
 }
 
-/* .abo-dream h2 span {
-   font-weight: 400;
-   color: var(--dream-color)
-}
-
-.abo-design h2 span {
-   font-weight: 500;
-   color: var(--design-color)
-}
-
-.abo-play h2 span {
-   font-weight: 500;
-   color: var(--play-color)
-} */
-
 
 .abo-descript {
    width: 100%;
@@ -91,7 +75,7 @@
    margin-top: 70px;
 }
 
-.abo-all {
+.abo-translation {
    position: absolute;
    display: flex;
    justify-content: center;
@@ -108,24 +92,10 @@
    cursor: pointer;
 }
 
-.abo-all:hover {
+.abo-translation:hover {
    filter: invert(1);
 }
 
-.abo-img {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.abo-img img {
-   width: 100%;
-   object-fit: cover;
-   border-top-left-radius: 50%;
-   border-top-right-radius: 50%;
-}
 
 .abo-descript p span {
    cursor: pointer;
@@ -133,12 +103,12 @@
    border-radius: 2rem;
    padding: 0 10px;
    font-weight: 400;
-   /* text-transform: uppercase; */
 }
 
 .abo-descript p span:hover {
    border: none;
 }
+
 
 .abo-descript .DDP::after {
    content: '동대문 디자인 플라자';
@@ -387,20 +357,15 @@
 }
 
 
-
-
 .abo-play .c1 {
-   /* border: 3px solid var(--dream-color); */
    animation: play 2s ease-in-out infinite;
 }
 
 .abo-play .c2 {
-   /* border: 3px solid var(--design-color); */
    animation: play 2s 0.2s ease-in-out infinite;
 }
 
 .abo-play .c3 {
-   /* border: 3px solid var(--play-color); */
    animation: play 2s 0.4s ease-in-out infinite;
 }
 

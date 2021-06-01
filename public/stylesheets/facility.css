@@ -1,5 +1,5 @@
 .facility {
-   padding: 100px 200px 0;
+   padding: 130px 15vw 0;
 }
 .fac-content {
    display: flex;
@@ -23,7 +23,7 @@
 .fac-list {
    padding-top: 20px;
    width: 20%;
-   border-top: 2px solid;
+   border-top: 1px solid;
 }
 
 .fac-list ul li {
@@ -32,6 +32,17 @@
 
 .fac-list ul li a {
    font-size: 0.85rem;
+   border-radius: 30px;
+   border: 1px solid #fff;
+   padding: 0 5px;
+}
+
+.fac-list ul li:hover a {
+   border: 1px solid #000;
+}
+
+.fac-list ul li a.fac-list-on {
+   border: 1px solid #000;
 }
 
 
@@ -103,7 +114,7 @@
 }
 
 .fac-slide .slidelist label:hover { 
-   filter: invert(1);
+   filter: opacity(0.5);
 }
 
 .fac-slide .slidelist .left {

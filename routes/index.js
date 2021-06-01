@@ -23,10 +23,30 @@ router.get('/program', function(req, res, next) {
  });
 });
 
-router.get('/programdetails', function(req, res, next) {
+
+router.get('/program/1', function(req, res, next) {
   res.render('programDetails', { 
-    title: 'Program Details',
-    name: 'programDetails'
+    title: 'Program',
+    name: 'programDetails',
+    num: '1',
+    programName: 'Design and the Birth of Daily Life',
+    description: 'The exhibition will address five acts of daily life that were considered normal before COVID-19. What objects accompany us in our daily lives when we watch television, do laundry, clean, store food, and listen to music? Experience how valuable our mundane lives were through the Symbols of Happiness exhibition!',
+    schedule: '2020.11.18 ~ 2021.12.01',
+    location: 'Online',
+    open: 'Always'
+ });
+});
+
+router.get('/program/2', function(req, res, next) {
+  res.render('programDetails', { 
+    title: 'Program',
+    name: 'programDetails',
+    num: '2',
+    programName: 'SEOUL LIGHT',
+    description: 'SEOUL Light features intrinsic light content utilizing DPP’s unique exterior. SEOUL Light will be operated as a basis for night tourism during the winter when the number of travelers declines markedly to contribute to the development of Dongdaemun as the premier light content festival leading DPP’s future. We will maintain the vitality of the area with stories citizens can sympathize with by expressing public narratives through arts and technology.',
+    schedule: '2020.12.20 ~ 2021.01.03',
+    location: 'DDP Design Avenue',
+    open: '19:00-22:00 every day'
  });
 });
 
@@ -43,6 +63,7 @@ router.get('/facility', function(req, res, next) {
     name: 'facility'
  });
 });
+
 
 router.get('/facility/1', function(req, res, next) {
   res.render('facility', { 

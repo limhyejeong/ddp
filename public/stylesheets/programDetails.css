@@ -1,0 +1,88 @@
+.programDetail {
+   padding: 130px 15vw 0;
+}
+
+.pro-back {
+   font-size: 0.8rem;
+   border-bottom: 1px solid;
+}
+
+.programDetail h1.page-title {
+   font-weight: 200;
+   font-size: 2.5rem;
+   margin: 20px 0 50px;
+}
+
+.proDet-content {
+   height: 40%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas:
+      "schedule location open"
+      "img-des img-des img-des";
+   grid-gap: 20px;
+}
+
+.proDet-content div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.9rem;
+   font-weight: 500;
+   height: 250px;
+   color: #fff;
+   transition: .3s;
+}
+
+.proDet-content div:hover {
+   border-radius: 0;
+}
+
+.proDet-content .pro-schedule {
+   grid-area: schedule;
+   border-top-left-radius: 75%;
+   background: var(--dream-color);
+}
+
+.proDet-content .pro-location {
+   grid-area: location;
+   border-radius: 50% 50% 0 0;
+   background: var(--design-color);
+   color: #000;
+}
+
+.proDet-content .pro-open {
+   grid-area: open;
+   border-bottom-left-radius: 50%;
+   background: var(--play-color);
+}
+
+.proDet-content .pro-img-description {
+   grid-area: img-des;
+}
+
+.proDet-content .pro-description {
+   margin-left: 10px;
+}
+
+.proDet-content .pro-description p {
+   font-size: 0.75rem;
+   padding: 0 20px;
+   color: #000;
+}
+
+.proDet-content .pro-img {
+   justify-content: end;
+}
+
+.proDet-content .pro-img img {
+   object-fit: cover;
+   height: 100%;
+}
+
+.proDet-content .pro-fee {
+   grid-area: fee;
+   border-radius: 50% 0;
+   background: #000;
+}

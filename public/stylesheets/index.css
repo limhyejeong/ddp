@@ -1,24 +1,40 @@
 .main {
    position: relative;
    height: 100%;
-   background: #fff;
+   background: #000;
    overflow: hidden;
    display: flex;
    justify-content: center;
    align-items: center;
-   transition: 0.5s;
+   transition: 0.3s;
 }
 
 .main h1 {
    position: absolute;
    font-size: 15rem;
-   z-index: 7;
-   top: 20%;
+   z-index: 15;
+   top: 17%;
    /* margin-top: -400px; */
-   color: #000;
-   /* transform: translate(calc(var(--x) / 30), calc(var(--y) / 30)); */
+   transform: translate(calc(var(--x) / 50), calc(var(--y) / 50));
    /* animation: identifier 3s linear infinite; */
 }
+
+.main h1 a {
+   color: #fff;
+   cursor: pointer;
+}
+
+.main h1 a:hover {
+   -webkit-text-stroke: 2px black;
+   color: #fff;
+}
+
+/* .main .about-btn {
+   border: 2px solid;
+   padding: 5px 15px;
+   margin-top: 50px;
+   border-radius: 20px;
+} */
 
 @keyframes identifier {
    0% {
@@ -34,14 +50,14 @@
 }
 
 .main img#img1 {
-   left: 25%;
+   left: 40%;
    width: 80%;
-   bottom: 0;
+   bottom: 24%;
+   max-width: 700px;
 }
 
 .earth {
-   background: #111;
-   border: 2px solid #000;
+   background: #fff;
    position: absolute;
    width: 100%;
    height: 25%;
@@ -50,7 +66,7 @@
 
 .main img#img2 {
    right: -300px;
-   height: 100%;
+   height: 101%;
    z-index: 10;
 }
 
@@ -61,15 +77,10 @@
 }
 
 .main img#img4 {
-   left: -350px;
-   height: 100%;
+   top: -3px;
+   left: -150px;
+   height: 95%;
    z-index: 10;
-}
-
-.main img#img4-2 {
-   height: 90%;
-   left: -450px;
-   bottom: -150px;
 }
 
 .main::after {
@@ -78,7 +89,7 @@
    bottom: 0;
    width: 100%;
    height: 200px;
-   background: linear-gradient(to top, #fff, transparent);
+   /* background: linear-gradient(to top, #fff, transparent); */
    z-index: 11;
 }
 

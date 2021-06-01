@@ -1,12 +1,20 @@
 extends layout
 
 block content
-   .div1
-      h1 Design and the Birth of Daily Life
-      span 2020. 11. 18 ~ 2021. 12. 01
-      span www.symbolsofhappiness.or.kr
-      div 
-         p 3D website exhibition ▶ <br> exhibition and symposium ▶
-         p Video exhibition: YouTube exhibition guide by a curator <br> 1. : Changsup Oh (curator) <br> 2. : Changsup Oh (curator), Mingyeong Seo (editor) <br> 3. : Changsup Oh (curator), Youngjoo Ahn (professor) <br> 4. : Changsup Oh (curator), Helen Ku (curator) <br> 5. : Changsup Oh (curator), Jaesik Kwak (scientist and novelist)
-   
-   .div2 
+
+   .programDetail
+
+      a(href="/program").pro-back <  Program List 
+
+      h1.page-title=programName
+
+      .proDet-content
+         .pro-schedule=schedule
+         .pro-location=location
+         .pro-open=open
+         .pro-img-description
+            .pro-img
+               img(src=`/images/program/program${num}.jpg`, alt="")
+            .pro-description 
+               p=description
+            

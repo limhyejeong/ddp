@@ -80,55 +80,55 @@ figure.fac-img img {
 .fac-zones .fac-zone2 {
    left: 17%;
    top: 55%;
-   transform: translate(calc(var(--x) / 30), calc(var(--y) / 20));
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-zone3 {
    left: 0%;
-   top: 22%;
-   transform: translate(calc(var(--x) / 8), calc(var(--y) / 8));
+   top: 25%;
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-zone4 {
    left: 17%;
    top: 10%;
-   transform: translate(calc(var(--x) / 30), calc(var(--y) / 30));
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-zone5 {
    left: 40%;
    top: -5%;
-   transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-zone6 {
    left: 65%;
    top: 25%;
-   transform: translate(calc(var(--x) / 20), calc(var(--y) / 20));
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-zone7 {
-   left: 72%;
+   left: 80%;
    top: 58%;
-   transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-zone8 {
-   left: 57%;
-   top: 65%;
-   transform: translate(calc(var(--x) / 10), calc(var(--y) / 10));
+   left: 62%;
+   top: 75%;
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-zone9 {
    left: 53%;
    top: 60%;
-   transform: translate(calc(var(--x) / 30), calc(var(--y) / 30));
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-zone10 {
-   left: 50%;
+   left: 53%;
    top: 38%;
-   transform: translate(calc(var(--x) / 50), calc(var(--y) / 50));
+   transform: translate(calc(var(--x) / 60), calc(var(--y) / 60));
 }
 
 .fac-zones .fac-bus {

@@ -1,8 +1,6 @@
 const img1 = document.getElementById('img1');
 const img2 = document.getElementById('img2');
 const img3 = document.getElementById('img3');
-const img4 = document.getElementById('img4');
-const img42 = document.getElementById('img4-2');
 const earth = document.querySelector('.earth');
 const title = document.querySelector('.ind-title');
 const main = document.querySelector('.main');
@@ -18,9 +16,9 @@ window.addEventListener('scroll', function() {
    img1.style.width = 80 - scrollY * 0.01 + '%';
    img1.style.filter = 'blur('+ scrollY * 0.02 +'px)';
    img2.style.right = -300 + scrollY * -2 + 'px';
-   // img3.style.bottom = -200 + scrollY * -0.7 + 'px';
-   img4.style.left = -150 + scrollY * -2 + 'px';
+   img3.style.left = -150 + scrollY * -2 + 'px';
    earth.style.height = 25 - scrollY * 0.05 + '%';
+   title.style.marginTop = 17 - scrollY * 0.1 + '%';
 
    // console.log(scrollY, window.innerHeight);
 
@@ -38,14 +36,14 @@ title.addEventListener('mouseover', function() {
    console.log(su);
 });
 title.addEventListener('mouseleave', function() {
-   main.style.background = '#000';
+   main.style.background = '#fff';
 });
 
 
 
 
-pos.addEventListener("mousemove", e => {
-   pos.style.setProperty('--x', e.clientX + "px");
-   pos.style.setProperty('--y', e.clientY + "px");
-})
+// pos.addEventListener("mousemove", e => {
+//    pos.style.setProperty('--x', e.clientX + "px");
+//    pos.style.setProperty('--y', e.clientY + "px");
+// })
 

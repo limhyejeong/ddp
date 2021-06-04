@@ -1,7 +1,14 @@
-.main {
+.index {
    position: relative;
+   height: 200%;
+   width: 100%;
+}
+
+.main {
+   position: fixed;
+   width: 100%;
    height: 100%;
-   background: #000;
+   background: #fff;
    overflow: hidden;
    display: flex;
    justify-content: center;
@@ -12,9 +19,8 @@
 .main h1 {
    position: absolute;
    font-size: 15rem;
-   z-index: 15;
+   z-index: 1;
    top: 17%;
-   /* margin-top: -400px; */
    transform: translate(calc(var(--x) / 50), calc(var(--y) / 50));
    /* animation: identifier 3s linear infinite; */
 }
@@ -22,10 +28,11 @@
 .main h1 a {
    color: #fff;
    cursor: pointer;
+   -webkit-text-stroke: 2px black;
+   display: block;
 }
 
 .main h1 a:hover {
-   -webkit-text-stroke: 2px black;
    color: #fff;
 }
 
@@ -71,12 +78,6 @@
 }
 
 .main img#img3 {
-   bottom: -200px;
-   width: 100%;
-   z-index: 5;
-}
-
-.main img#img4 {
    top: -3px;
    left: -150px;
    height: 95%;
